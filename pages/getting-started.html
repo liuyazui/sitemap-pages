@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursor入门指南 - 如何开始使用智能代码编辑器</title>
+  <meta name="description" content="Cursor编辑器入门指南，包括安装配置、基本使用、UI界面介绍和第一步引导。">
+  <meta name="keywords" content="Cursor, AI编辑器, 入门指南, 安装教程, 代码编辑器">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-logo">
+        <a href="../index.html">Cursor文档</a>
+      </div>
+      
+      <button class="navbar-toggle" aria-expanded="false" aria-label="切换导航">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <ul class="navbar-links">
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="getting-started.html" class="active">入门指南</a></li>
+        <li><a href="features.html">功能特性</a></li>
+        <li><a href="shortcuts.html">快捷键</a></li>
+        <li><a href="faq.html">常见问题</a></li>
+      </ul>
+      
+      <button class="theme-toggle" aria-label="切换主题">
+        <i class="fas fa-moon"></i>
+        <span class="tooltip-text">切换到暗色主题</span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- 主要内容 -->
+  <main class="container">
+    <div class="content">
+      <h1 id="getting-started">Cursor入门指南</h1>
+      
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="搜索文档..." aria-label="搜索文档">
+        <div class="search-results"></div>
+      </div>
+      
+      <p>
+        欢迎使用Cursor入门指南！本文将帮助你了解如何安装、配置和开始使用这款智能代码编辑器。
+        Cursor结合了VSCode的强大功能和现代AI技术，为你提供前所未有的编程体验。
+        让我们一起开始这段AI辅助编程的旅程吧！
+      </p>
+      
+      <h2 id="system-requirements">系统要求</h2>
+      
+      <div class="card">
+        <p>在安装Cursor之前，请确保你的系统满足以下要求：</p>
+        
+        <h3>Windows</h3>
+        <ul>
+          <li>Windows 10/11 64位</li>
+          <li>4GB RAM (建议8GB以上)</li>
+          <li>2GHz双核处理器</li>
+          <li>1GB可用磁盘空间</li>
+          <li>DirectX 9或更高版本</li>
+        </ul>
+        
+        <h3>macOS</h3>
+        <ul>
+          <li>macOS 10.15 Catalina或更新版本</li>
+          <li>4GB RAM (建议8GB以上)</li>
+          <li>Intel或Apple Silicon处理器</li>
+          <li>1GB可用磁盘空间</li>
+        </ul>
+        
+        <h3>Linux</h3>
+        <ul>
+          <li>Ubuntu 18.04+, Debian 10+, CentOS 7+, Fedora 32+</li>
+          <li>4GB RAM (建议8GB以上)</li>
+          <li>2GHz双核处理器</li>
+          <li>1GB可用磁盘空间</li>
+          <li>GNOME, KDE或其他现代桌面环境</li>
+        </ul>
+      </div>
+      
+      <h2 id="installation">安装Cursor</h2>
+      
+      <div class="card">
+        <h3 id="windows-install">Windows安装</h3>
+        <ol>
+          <li>访问<a href="https://cursor.sh" target="_blank">Cursor官网</a>下载Windows安装包</li>
+          <li>运行下载的.exe文件</li>
+          <li>按照安装向导的指示完成安装</li>
+          <li>安装完成后，Cursor会自动启动</li>
+        </ol>
+        
+        <h3 id="macos-install">macOS安装</h3>
+        <ol>
+          <li>访问<a href="https://cursor.sh" target="_blank">Cursor官网</a>下载macOS安装包</li>
+          <li>打开下载的.dmg文件</li>
+          <li>将Cursor应用拖到Applications文件夹</li>
+          <li>从Applications文件夹或Launchpad启动Cursor</li>
+          <li>首次启动时可能需要授权运行</li>
+        </ol>
+        
+        <h3 id="linux-install">Linux安装</h3>
+        <ol>
+          <li>访问<a href="https://cursor.sh" target="_blank">Cursor官网</a>下载适合你发行版的安装包</li>
+          <li>Debian/Ubuntu: <code>sudo dpkg -i cursor_X.X.X_amd64.deb</code></li>
+          <li>Fedora/CentOS: <code>sudo rpm -i cursor-X.X.X.x86_64.rpm</code></li>
+          <li>或解压.tar.gz文件并运行可执行文件</li>
+        </ol>
+      </div>
+      
+      <h2 id="first-launch">首次启动</h2>
+      
+      <div class="card">
+        <p>首次启动Cursor时，你会看到欢迎界面，引导你完成初始设置：</p>
+        
+        <ol>
+          <li><strong>登录或创建账号</strong> - 使用GitHub账号登录或创建新的Cursor账号</li>
+          <li><strong>选择主题</strong> - 选择亮色或暗色界面主题</li>
+          <li><strong>选择键盘快捷键方案</strong> - 默认、VSCode、Vim等</li>
+          <li><strong>选择常用编程语言</strong> - 根据你的需求选择</li>
+          <li><strong>AI配置</strong> - 设置使用的AI模型和参数</li>
+        </ol>
+        
+        <p>完成初始设置后，你将看到Cursor的主界面。你可以打开现有项目或创建新项目开始使用。</p>
+      </div>
+      
+      <h2 id="user-interface">用户界面概览</h2>
+      
+      <div class="card">
+        <p>Cursor的界面布局与VSCode类似，但增加了AI功能区域：</p>
+        
+        <h3>主要界面元素</h3>
+        <ul>
+          <li><strong>活动栏</strong> - 左侧垂直图标栏，用于切换主要视图</li>
+          <li><strong>侧边栏</strong> - 可显示文件浏览器、搜索、Git控制等</li>
+          <li><strong>编辑器区域</strong> - 中央代码编辑区域，可分为多个分栏</li>
+          <li><strong>状态栏</strong> - 底部显示当前状态、行号、编码等信息</li>
+          <li><strong>AI面板</strong> - 可通过Ctrl+J(Windows/Linux)或Cmd+J(Mac)打开的AI交互面板</li>
+        </ul>
+        
+        <h3>AI专属界面元素</h3>
+        <ul>
+          <li><strong>AI聊天面板</strong> - 与AI助手对话的界面</li>
+          <li><strong>代码生成区域</strong> - 显示AI生成的代码建议</li>
+          <li><strong>智能补全</strong> - 在编辑器中直接显示的AI代码补全</li>
+        </ul>
+      </div>
+      
+      <h2 id="basic-usage">基本使用</h2>
+      
+      <div class="card">
+        <h3 id="open-project">打开项目</h3>
+        <p>
+          你可以通过以下方式打开项目：
+        </p>
+        <ul>
+          <li>点击"File > Open Folder"菜单选项</li>
+          <li>使用快捷键Ctrl+O (Windows/Linux)或Cmd+O (Mac)</li>
+          <li>从最近项目列表中选择</li>
+        </ul>
+        
+        <h3 id="create-file">创建文件</h3>
+        <p>
+          创建新文件的方法：
+        </p>
+        <ul>
+          <li>在文件浏览器中右键点击，选择"New File"</li>
+          <li>使用快捷键Ctrl+N (Windows/Linux)或Cmd+N (Mac)</li>
+          <li>点击"File > New File"菜单选项</li>
+        </ul>
+        
+        <h3 id="save-file">保存文件</h3>
+        <p>
+          保存文件的方法：
+        </p>
+        <ul>
+          <li>使用快捷键Ctrl+S (Windows/Linux)或Cmd+S (Mac)</li>
+          <li>点击"File > Save"菜单选项</li>
+          <li>自动保存功能会定期保存你的更改</li>
+        </ul>
+      </div>
+      
+      <h2 id="ai-features">AI功能入门</h2>
+      
+      <div class="card">
+        <h3 id="chat-with-ai">与AI对话</h3>
+        <p>
+          要开始与AI助手对话：
+        </p>
+        <ol>
+          <li>按下Ctrl+J (Windows/Linux)或Cmd+J (Mac)打开AI面板</li>
+          <li>在输入框中输入你的问题或请求</li>
+          <li>按Enter发送消息</li>
+          <li>AI会根据你的项目上下文提供回答</li>
+        </ol>
+        
+        <h3 id="code-generation-basic">基本代码生成</h3>
+        <p>
+          让AI生成代码的方法：
+        </p>
+        <ol>
+          <li>在AI面板中描述你需要的功能，例如"创建一个计算斐波那契数列的函数"</li>
+          <li>AI会生成相应代码并展示在对话中</li>
+          <li>点击代码块右上角的"插入到编辑器"按钮将代码添加到当前文件</li>
+        </ol>
+        
+        <h3 id="explain-code">解释代码</h3>
+        <p>
+          获取代码解释的方法：
+        </p>
+        <ol>
+          <li>在编辑器中选中要解释的代码</li>
+          <li>右键点击并选择"Explain Selection"</li>
+          <li>或在AI面板中输入"解释这段代码："后粘贴代码</li>
+          <li>AI会提供详细解释，包括功能、逻辑和潜在问题</li>
+        </ol>
+      </div>
+      
+      <h2 id="next-steps">下一步</h2>
+      
+      <div class="card">
+        <p>现在你已经了解了Cursor的基本使用方法，接下来可以：</p>
+        
+        <ul>
+          <li>查看<a href="features.html">功能详解</a>深入了解Cursor的所有功能</li>
+          <li>学习<a href="shortcuts.html">快捷键</a>提高使用效率</li>
+          <li>浏览<a href="faq.html">常见问题</a>解决可能遇到的问题</li>
+        </ul>
+        
+        <p>开始你的AI辅助编程之旅，享受Cursor带来的高效开发体验！</p>
+        
+        <div class="btn-container">
+          <a href="features.html" class="btn">探索更多功能</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-section">
+        <h3>文档导航</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="getting-started.html">入门指南</a></li>
+          <li><a href="features.html">功能特性</a></li>
+          <li><a href="shortcuts.html">快捷键</a></li>
+          <li><a href="faq.html">常见问题</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>相关资源</h3>
+        <ul class="footer-links">
+          <li><a href="https://cursor.sh" target="_blank">Cursor官网</a></li>
+          <li><a href="https://github.com/getcursor/cursor" target="_blank">GitHub仓库</a></li>
+          <li><a href="https://cursor.sh/blog" target="_blank">官方博客</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>联系我们</h3>
+        <ul class="footer-links">
+          <li><a href="mailto:info@cursor.sh">邮件联系</a></li>
+          <li><a href="https://twitter.com/cursor_ai" target="_blank">Twitter</a></li>
+          <li><a href="https://discord.gg/cursor" target="_blank">Discord社区</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2023 Cursor文档站点。本站点仅用于教育目的。</p>
+    </div>
+  </footer>
+  
+  <!-- JavaScript文件 -->
+  <script src="../js/main.js"></script>
+</body>
+</html> 

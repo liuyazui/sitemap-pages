@@ -1,0 +1,59 @@
+{
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "C:\\Windows\\System32\\cmd.exe",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "enabled": true
+    },
+    "puppeteer": {
+      "command": "C:\\Windows\\System32\\cmd.exe",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ],
+      "enabled": true
+    },
+    "tavily-mcp": {
+      "command": "C:\\Windows\\System32\\cmd.exe",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "tavily-mcp@0.1.3"
+      ],
+      "env": {
+        "TAVILY_API_KEY": "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"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "memory": {
+      "command": "C:\\Windows\\System32\\cmd.exe",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "env": {
+        "MEMORY_FILE_PATH": "D:/MCP/memory/memory.json"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "fetch": {
+      "isActive": true,
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ]
+    }
+  }
+}

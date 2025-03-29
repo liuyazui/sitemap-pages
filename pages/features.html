@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursor功能特性 - 智能代码编辑器的强大功能</title>
+  <meta name="description" content="详细介绍Cursor编辑器的主要功能和特性，包括AI对话、代码生成、智能补全和调试功能等。">
+  <meta name="keywords" content="Cursor, AI编辑器, 代码生成, 智能补全, 代码解释">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-logo">
+        <a href="../index.html">Cursor文档</a>
+      </div>
+      
+      <button class="navbar-toggle" aria-expanded="false" aria-label="切换导航">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <ul class="navbar-links">
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="getting-started.html">入门指南</a></li>
+        <li><a href="features.html" class="active">功能特性</a></li>
+        <li><a href="shortcuts.html">快捷键</a></li>
+        <li><a href="faq.html">常见问题</a></li>
+      </ul>
+      
+      <button class="theme-toggle" aria-label="切换主题">
+        <i class="fas fa-moon"></i>
+        <span class="tooltip-text">切换到暗色主题</span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- 主要内容 -->
+  <main class="container">
+    <div class="content">
+      <h1 id="features">Cursor功能特性</h1>
+      
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="搜索文档..." aria-label="搜索文档">
+        <div class="search-results"></div>
+      </div>
+      
+      <p>
+        Cursor不仅是一个代码编辑器，更是你的智能编程助手。在这里，我们将详细介绍Cursor的核心功能和特性，
+        帮助你充分利用这款强大的AI编辑工具，提升编程效率和代码质量。
+      </p>
+      
+      <h2 id="ai-assistant">AI助手功能</h2>
+      
+      <div class="card">
+        <h3 id="ai-chat">AI对话</h3>
+        <p>
+          Cursor的AI对话功能允许你与先进的AI模型进行自然语言交流，获取编程帮助和指导：
+        </p>
+        <ul>
+          <li><strong>上下文感知</strong>：AI助手能理解你的项目结构和当前编辑的文件内容</li>
+          <li><strong>代码解释</strong>：详细解释选中的代码片段，包括功能、逻辑和潜在问题</li>
+          <li><strong>问题解答</strong>：回答与编程相关的问题，如API用法、算法解释等</li>
+          <li><strong>调试帮助</strong>：分析错误信息，提供解决方案</li>
+          <li><strong>最佳实践建议</strong>：提供代码优化和最佳实践的建议</li>
+        </ul>
+        <p>
+          使用方法：按下Ctrl+J（Windows/Linux）或Cmd+J（Mac）打开AI对话面板，输入问题或请求并按Enter发送。
+        </p>
+      </div>
+      
+      <div class="card">
+        <h3 id="code-generation">代码生成</h3>
+        <p>
+          Cursor可以根据你的自然语言描述自动生成代码，大幅提高开发效率：
+        </p>
+        <ul>
+          <li><strong>函数生成</strong>：根据功能描述自动生成完整函数</li>
+          <li><strong>模板代码</strong>：生成常见的代码模板和设计模式</li>
+          <li><strong>整个组件或类</strong>：根据需求描述生成完整的组件或类</li>
+          <li><strong>测试代码</strong>：自动生成单元测试代码</li>
+          <li><strong>数据处理</strong>：生成数据转换和处理代码</li>
+        </ul>
+        <p>
+          使用方法：在AI对话中描述你需要的功能（例如"创建一个处理JSON数据的解析函数"），
+          AI将生成相应代码。你可以点击代码块右上角的"插入到编辑器"按钮将代码添加到当前文件。
+        </p>
+      </div>
+      
+      <div class="card">
+        <h3 id="code-editing">代码编辑增强</h3>
+        <p>
+          Cursor提供多种AI辅助的代码编辑功能：
+        </p>
+        <ul>
+          <li><strong>重构建议</strong>：提供代码重构的智能建议</li>
+          <li><strong>添加注释</strong>：自动为代码添加详细的文档注释</li>
+          <li><strong>代码完成</strong>：根据上下文提供整行或多行代码的补全</li>
+          <li><strong>代码优化</strong>：提供性能和可读性优化建议</li>
+        </ul>
+        <p>
+          使用方法：选中需要编辑的代码，然后在AI对话中请求相应的编辑操作，
+          或使用右键菜单中的相关选项。
+        </p>
+      </div>
+      
+      <h2 id="code-intelligence">代码智能</h2>
+      
+      <div class="card">
+        <h3 id="smart-completion">智能代码补全</h3>
+        <p>
+          Cursor的代码补全功能远超传统编辑器：
+        </p>
+        <ul>
+          <li><strong>AI驱动补全</strong>：不仅基于语法，还基于上下文和项目理解</li>
+          <li><strong>多行代码补全</strong>：能预测并补全多行代码逻辑</li>
+          <li><strong>函数调用补全</strong>：智能推荐函数参数和用法</li>
+          <li><strong>导入语句补全</strong>：自动添加必要的导入语句</li>
+          <li><strong>上下文感知</strong>：基于当前文件和项目上下文提供更相关的补全</li>
+        </ul>
+        <p>
+          使用方法：开始输入代码时，补全建议会自动显示。按Tab接受建议，或使用箭头键导航不同选项。
+        </p>
+      </div>
+      
+      <div class="card">
+        <h3 id="semantic-navigation">语义化导航</h3>
+        <p>
+          Cursor提供基于代码语义的导航功能：
+        </p>
+        <ul>
+          <li><strong>智能跳转</strong>：精确跳转到函数定义、类和变量声明</li>
+          <li><strong>语义搜索</strong>：使用自然语言搜索代码库中的功能</li>
+          <li><strong>结构大纲</strong>：自动生成文件结构大纲，便于导航</li>
+          <li><strong>引用查找</strong>：查找符号的所有引用</li>
+        </ul>
+        <p>
+          使用方法：右键点击代码中的标识符并选择"Go to Definition"，或使用Ctrl+T（Windows/Linux）
+          或Cmd+T（Mac）打开符号搜索。
+        </p>
+      </div>
+      
+      <div class="card">
+        <h3 id="error-detection">智能错误检测</h3>
+        <p>
+          Cursor能够在你编写代码时实时检测并提供修复建议：
+        </p>
+        <ul>
+          <li><strong>实时错误检测</strong>：在你输入时检测语法和语义错误</li>
+          <li><strong>AI驱动修复建议</strong>：提供上下文相关的错误修复方案</li>
+          <li><strong>自动导入</strong>：检测缺失的导入语句并自动添加</li>
+          <li><strong>类型检查</strong>：在支持类型的语言中进行智能类型检查</li>
+        </ul>
+        <p>
+          使用方法：错误会自动在编辑器中以红色波浪线标注。将鼠标悬停在错误上可查看详细信息和修复建议。
+        </p>
+      </div>
+      
+      <h2 id="development-tools">开发工具集成</h2>
+      
+      <div class="card">
+        <h3 id="git-integration">Git集成</h3>
+        <p>
+          Cursor提供强大的Git版本控制集成：
+        </p>
+        <ul>
+          <li><strong>可视化Git操作</strong>：直观的分支、提交和合并操作</li>
+          <li><strong>内置差异查看器</strong>：高效比较文件变更</li>
+          <li><strong>提交消息生成</strong>：AI辅助生成有意义的提交消息</li>
+          <li><strong>冲突解决助手</strong>：帮助解决合并冲突</li>
+        </ul>
+        <p>
+          使用方法：通过左侧源代码管理图标访问Git功能，或使用AI助手请求帮助生成提交消息。
+        </p>
+      </div>
+      
+      <div class="card">
+        <h3 id="debugging">调试功能</h3>
+        <p>
+          Cursor集成了强大的调试工具：
+        </p>
+        <ul>
+          <li><strong>AI辅助断点</strong>：智能推荐有效的断点位置</li>
+          <li><strong>变量检查</strong>：实时查看和监控变量值</li>
+          <li><strong>条件断点</strong>：设置复杂的断点触发条件</li>
+          <li><strong>逐步执行</strong>：细粒度控制代码执行流程</li>
+          <li><strong>调用堆栈分析</strong>：可视化查看调用堆栈</li>
+        </ul>
+        <p>
+          使用方法：点击代码行号左侧设置断点，然后使用调试面板控制调试过程。
+          你也可以请求AI帮助分析调试过程中的问题。
+        </p>
+      </div>
+      
+      <div class="card">
+        <h3 id="terminal">集成终端</h3>
+        <p>
+          Cursor内置功能强大的终端：
+        </p>
+        <ul>
+          <li><strong>多终端支持</strong>：同时运行多个终端会话</li>
+          <li><strong>命令历史</strong>：快速访问之前使用的命令</li>
+          <li><strong>AI命令生成</strong>：通过自然语言描述生成复杂的终端命令</li>
+          <li><strong>分割视图</strong>：将终端与代码编辑器并排显示</li>
+        </ul>
+        <p>
+          使用方法：使用Ctrl+`（反引号）打开集成终端，或通过视图菜单选择"Terminal"。
+        </p>
+      </div>
+      
+      <h2 id="customization">个性化定制</h2>
+      
+      <div class="card">
+        <h3 id="themes">主题与界面</h3>
+        <p>
+          Cursor提供丰富的外观定制选项：
+        </p>
+        <ul>
+          <li><strong>多种内置主题</strong>：明亮和暗色主题选择</li>
+          <li><strong>自定义字体</strong>：选择适合你的编程字体</li>
+          <li><strong>布局调整</strong>：自定义编辑器布局和面板位置</li>
+          <li><strong>图标主题</strong>：更改文件和文件夹图标</li>
+        </ul>
+        <p>
+          使用方法：通过"File > Preferences > Settings"或Ctrl+,（Windows/Linux）
+          或Cmd+,（Mac）访问设置。
+        </p>
+      </div>
+      
+      <div class="card">
+        <h3 id="keyboard-shortcuts">键盘快捷键</h3>
+        <p>
+          自定义键盘快捷方式以提高效率：
+        </p>
+        <ul>
+          <li><strong>多种预设方案</strong>：VSCode、Vim、Emacs等</li>
+          <li><strong>完全自定义</strong>：为任何命令自定义快捷键</li>
+          <li><strong>键绑定冲突检测</strong>：避免快捷键冲突</li>
+          <li><strong>快捷键查询</strong>：通过Ctrl+K Ctrl+S快速查找快捷键</li>
+        </ul>
+        <p>
+          使用方法：通过"File > Preferences > Keyboard Shortcuts"访问快捷键设置。
+        </p>
+      </div>
+      
+      <div class="card">
+        <h3 id="extensions">扩展性</h3>
+        <p>
+          通过扩展增强Cursor功能：
+        </p>
+        <ul>
+          <li><strong>VSCode兼容扩展</strong>：支持大多数VSCode扩展</li>
+          <li><strong>扩展市场</strong>：直接从扩展市场安装扩展</li>
+          <li><strong>AI增强扩展</strong>：专门为Cursor打造的AI功能扩展</li>
+          <li><strong>语言支持</strong>：通过扩展添加更多编程语言支持</li>
+        </ul>
+        <p>
+          使用方法：通过"View > Extensions"或Ctrl+Shift+X打开扩展面板，搜索并安装所需扩展。
+        </p>
+      </div>
+      
+      <h2 id="language-support">语言支持</h2>
+      
+      <div class="card">
+        <h3 id="supported-languages">支持的编程语言</h3>
+        <p>
+          Cursor支持多种主流编程语言，每种语言都具有智能功能：
+        </p>
+        <ul>
+          <li><strong>JavaScript/TypeScript</strong>：完整的语言服务，包括类型检查和自动导入</li>
+          <li><strong>Python</strong>：智能代码补全、类型推断和Jupyter笔记本支持</li>
+          <li><strong>Java</strong>：语法高亮、智能导航和类层次结构</li>
+          <li><strong>C/C++</strong>：智能感知、调试支持和标准库集成</li>
+          <li><strong>Rust</strong>：智能补全、内联类型提示和Cargo集成</li>
+          <li><strong>Go</strong>：自动导入、格式化和工具链集成</li>
+          <li><strong>和更多</strong>：支持超过40种编程语言和标记语言</li>
+        </ul>
+        <p>
+          使用方法：打开相应语言的文件，Cursor会自动激活该语言的支持功能。
+        </p>
+      </div>
+      
+      <div class="card">
+        <h3 id="language-specific-features">语言特定功能</h3>
+        <p>
+          Cursor为不同语言提供专门的功能：
+        </p>
+        <ul>
+          <li><strong>JavaScript/TypeScript</strong>：React/Vue/Angular组件智能支持</li>
+          <li><strong>Python</strong>：虚拟环境集成、数据科学工具支持</li>
+          <li><strong>Java</strong>：Maven/Gradle支持、SpringBoot智能功能</li>
+          <li><strong>C#</strong>：.NET项目智能支持、NuGet集成</li>
+          <li><strong>PHP</strong>：Composer支持、Laravel智能功能</li>
+        </ul>
+        <p>
+          使用方法：这些功能会在你处理相应语言项目时自动可用。你也可以通过扩展市场安装特定语言的额外支持。
+        </p>
+      </div>
+      
+      <h2 id="next-steps">深入探索</h2>
+      
+      <div class="card">
+        <p>
+          现在你已经了解了Cursor的主要功能，接下来可以：
+        </p>
+        <ul>
+          <li>查看<a href="shortcuts.html">快捷键参考</a>了解如何更高效地使用这些功能</li>
+          <li>浏览<a href="faq.html">常见问题</a>解决使用过程中可能遇到的问题</li>
+          <li>开始实际项目的开发，利用AI功能提升编程效率</li>
+        </ul>
+        <div class="btn-container">
+          <a href="shortcuts.html" class="btn">查看快捷键</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-section">
+        <h3>文档导航</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="getting-started.html">入门指南</a></li>
+          <li><a href="features.html">功能特性</a></li>
+          <li><a href="shortcuts.html">快捷键</a></li>
+          <li><a href="faq.html">常见问题</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>相关资源</h3>
+        <ul class="footer-links">
+          <li><a href="https://cursor.sh" target="_blank">Cursor官网</a></li>
+          <li><a href="https://github.com/getcursor/cursor" target="_blank">GitHub仓库</a></li>
+          <li><a href="https://cursor.sh/blog" target="_blank">官方博客</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>联系我们</h3>
+        <ul class="footer-links">
+          <li><a href="mailto:info@cursor.sh">邮件联系</a></li>
+          <li><a href="https://twitter.com/cursor_ai" target="_blank">Twitter</a></li>
+          <li><a href="https://discord.gg/cursor" target="_blank">Discord社区</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2023 Cursor文档站点。本站点仅用于教育目的。</p>
+    </div>
+  </footer>
+  
+  <!-- JavaScript文件 -->
+  <script src="../js/main.js"></script>
+</body>
+</html> 

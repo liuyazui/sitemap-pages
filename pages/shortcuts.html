@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursor快捷键参考 - 提高编程效率的键盘快捷方式</title>
+  <meta name="description" content="Cursor编辑器快捷键完整参考，包括编辑、导航、搜索、AI功能和其他常用操作的键盘快捷方式。">
+  <meta name="keywords" content="Cursor, 快捷键, 键盘快捷方式, 编程效率, AI编辑器">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-logo">
+        <a href="../index.html">Cursor文档</a>
+      </div>
+      
+      <button class="navbar-toggle" aria-expanded="false" aria-label="切换导航">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <ul class="navbar-links">
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="getting-started.html">入门指南</a></li>
+        <li><a href="features.html">功能特性</a></li>
+        <li><a href="shortcuts.html" class="active">快捷键</a></li>
+        <li><a href="faq.html">常见问题</a></li>
+      </ul>
+      
+      <button class="theme-toggle" aria-label="切换主题">
+        <i class="fas fa-moon"></i>
+        <span class="tooltip-text">切换到暗色主题</span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- 主要内容 -->
+  <main class="container">
+    <div class="content">
+      <h1 id="shortcuts">Cursor快捷键参考</h1>
+      
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="搜索文档..." aria-label="搜索文档">
+        <div class="search-results"></div>
+      </div>
+      
+      <p>
+        掌握快捷键是提高编程效率的关键。Cursor提供了丰富的键盘快捷方式，帮助你更快地完成各种任务。
+        本页面整理了最常用的快捷键，包括常规操作、编辑功能、导航、搜索以及AI特有功能的快捷方式。
+      </p>
+      
+      <div class="card">
+        <p class="note">
+          <i class="fas fa-info-circle"></i> 注意：下面列出的是默认键盘方案的快捷键。对于Windows/Linux用户，使用Ctrl键；对于Mac用户，使用Cmd键。你可以通过File > Preferences > Keyboard Shortcuts自定义这些快捷键。
+        </p>
+      </div>
+      
+      <h2 id="ai-shortcuts">AI功能快捷键</h2>
+      
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>功能</th>
+              <th>Windows/Linux</th>
+              <th>Mac</th>
+              <th>描述</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>打开AI面板</td>
+              <td><code>Ctrl+J</code></td>
+              <td><code>Cmd+J</code></td>
+              <td>打开或关闭AI助手对话面板</td>
+            </tr>
+            <tr>
+              <td>解释选中代码</td>
+              <td><code>Ctrl+Shift+E</code></td>
+              <td><code>Cmd+Shift+E</code></td>
+              <td>请求AI解释当前选中的代码</td>
+            </tr>
+            <tr>
+              <td>生成代码</td>
+              <td><code>Ctrl+Shift+G</code></td>
+              <td><code>Cmd+Shift+G</code></td>
+              <td>根据注释或选中文本生成代码</td>
+            </tr>
+            <tr>
+              <td>代码重构</td>
+              <td><code>Ctrl+Shift+R</code></td>
+              <td><code>Cmd+Shift+R</code></td>
+              <td>请求AI重构选中的代码</td>
+            </tr>
+            <tr>
+              <td>添加注释</td>
+              <td><code>Alt+Shift+C</code></td>
+              <td><code>Option+Shift+C</code></td>
+              <td>为选中的代码添加AI生成的注释</td>
+            </tr>
+            <tr>
+              <td>修复错误</td>
+              <td><code>Alt+Shift+F</code></td>
+              <td><code>Option+Shift+F</code></td>
+              <td>请求AI修复当前文件中的错误</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <h2 id="general-shortcuts">常规操作快捷键</h2>
+      
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>功能</th>
+              <th>Windows/Linux</th>
+              <th>Mac</th>
+              <th>描述</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>新建文件</td>
+              <td><code>Ctrl+N</code></td>
+              <td><code>Cmd+N</code></td>
+              <td>创建新文件</td>
+            </tr>
+            <tr>
+              <td>打开文件</td>
+              <td><code>Ctrl+O</code></td>
+              <td><code>Cmd+O</code></td>
+              <td>打开文件选择器</td>
+            </tr>
+            <tr>
+              <td>保存文件</td>
+              <td><code>Ctrl+S</code></td>
+              <td><code>Cmd+S</code></td>
+              <td>保存当前文件</td>
+            </tr>
+            <tr>
+              <td>另存为</td>
+              <td><code>Ctrl+Shift+S</code></td>
+              <td><code>Cmd+Shift+S</code></td>
+              <td>将当前文件另存为新文件</td>
+            </tr>
+            <tr>
+              <td>关闭文件</td>
+              <td><code>Ctrl+W</code></td>
+              <td><code>Cmd+W</code></td>
+              <td>关闭当前文件</td>
+            </tr>
+            <tr>
+              <td>关闭所有文件</td>
+              <td><code>Ctrl+K Ctrl+W</code></td>
+              <td><code>Cmd+K Cmd+W</code></td>
+              <td>关闭所有打开的文件</td>
+            </tr>
+            <tr>
+              <td>切换设置</td>
+              <td><code>Ctrl+,</code></td>
+              <td><code>Cmd+,</code></td>
+              <td>打开设置页面</td>
+            </tr>
+            <tr>
+              <td>打开命令面板</td>
+              <td><code>Ctrl+Shift+P</code></td>
+              <td><code>Cmd+Shift+P</code></td>
+              <td>打开命令面板执行各种命令</td>
+            </tr>
+            <tr>
+              <td>切换侧边栏</td>
+              <td><code>Ctrl+B</code></td>
+              <td><code>Cmd+B</code></td>
+              <td>显示/隐藏侧边栏</td>
+            </tr>
+            <tr>
+              <td>切换终端</td>
+              <td><code>Ctrl+`</code></td>
+              <td><code>Cmd+`</code></td>
+              <td>显示/隐藏集成终端</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <h2 id="editing-shortcuts">编辑快捷键</h2>
+      
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>功能</th>
+              <th>Windows/Linux</th>
+              <th>Mac</th>
+              <th>描述</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>撤销</td>
+              <td><code>Ctrl+Z</code></td>
+              <td><code>Cmd+Z</code></td>
+              <td>撤销上一次编辑操作</td>
+            </tr>
+            <tr>
+              <td>重做</td>
+              <td><code>Ctrl+Y</code></td>
+              <td><code>Cmd+Shift+Z</code></td>
+              <td>重做上一次被撤销的操作</td>
+            </tr>
+            <tr>
+              <td>剪切</td>
+              <td><code>Ctrl+X</code></td>
+              <td><code>Cmd+X</code></td>
+              <td>剪切选中的文本</td>
+            </tr>
+            <tr>
+              <td>复制</td>
+              <td><code>Ctrl+C</code></td>
+              <td><code>Cmd+C</code></td>
+              <td>复制选中的文本</td>
+            </tr>
+            <tr>
+              <td>粘贴</td>
+              <td><code>Ctrl+V</code></td>
+              <td><code>Cmd+V</code></td>
+              <td>粘贴剪贴板内容</td>
+            </tr>
+            <tr>
+              <td>复制行</td>
+              <td><code>Shift+Alt+Down</code></td>
+              <td><code>Shift+Option+Down</code></td>
+              <td>向下复制当前行</td>
+            </tr>
+            <tr>
+              <td>移动行</td>
+              <td><code>Alt+Up/Down</code></td>
+              <td><code>Option+Up/Down</code></td>
+              <td>上移或下移当前行</td>
+            </tr>
+            <tr>
+              <td>添加多个光标</td>
+              <td><code>Ctrl+Alt+Up/Down</code></td>
+              <td><code>Cmd+Option+Up/Down</code></td>
+              <td>在上方/下方添加光标</td>
+            </tr>
+            <tr>
+              <td>选择相同的所有匹配项</td>
+              <td><code>Ctrl+Shift+L</code></td>
+              <td><code>Cmd+Shift+L</code></td>
+              <td>选择当前选中内容的所有匹配项</td>
+            </tr>
+            <tr>
+              <td>选择下一个匹配项</td>
+              <td><code>Ctrl+D</code></td>
+              <td><code>Cmd+D</code></td>
+              <td>选择下一个与当前选中内容相同的文本</td>
+            </tr>
+            <tr>
+              <td>注释/取消注释</td>
+              <td><code>Ctrl+/</code></td>
+              <td><code>Cmd+/</code></td>
+              <td>注释或取消注释当前行</td>
+            </tr>
+            <tr>
+              <td>缩进</td>
+              <td><code>Tab</code></td>
+              <td><code>Tab</code></td>
+              <td>增加选中行的缩进</td>
+            </tr>
+            <tr>
+              <td>减少缩进</td>
+              <td><code>Shift+Tab</code></td>
+              <td><code>Shift+Tab</code></td>
+              <td>减少选中行的缩进</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <h2 id="navigation-shortcuts">导航快捷键</h2>
+      
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>功能</th>
+              <th>Windows/Linux</th>
+              <th>Mac</th>
+              <th>描述</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>转到行</td>
+              <td><code>Ctrl+G</code></td>
+              <td><code>Cmd+G</code></td>
+              <td>转到指定行号</td>
+            </tr>
+            <tr>
+              <td>转到文件</td>
+              <td><code>Ctrl+P</code></td>
+              <td><code>Cmd+P</code></td>
+              <td>快速打开文件</td>
+            </tr>
+            <tr>
+              <td>转到符号</td>
+              <td><code>Ctrl+Shift+O</code></td>
+              <td><code>Cmd+Shift+O</code></td>
+              <td>在当前文件中导航到指定符号</td>
+            </tr>
+            <tr>
+              <td>转到定义</td>
+              <td><code>F12</code></td>
+              <td><code>F12</code></td>
+              <td>跳转到当前标识符的定义处</td>
+            </tr>
+            <tr>
+              <td>查看引用</td>
+              <td><code>Shift+F12</code></td>
+              <td><code>Shift+F12</code></td>
+              <td>查看当前标识符的所有引用</td>
+            </tr>
+            <tr>
+              <td>返回上一位置</td>
+              <td><code>Alt+Left</code></td>
+              <td><code>Ctrl+Minus</code></td>
+              <td>返回上一个位置</td>
+            </tr>
+            <tr>
+              <td>前进到下一位置</td>
+              <td><code>Alt+Right</code></td>
+              <td><code>Ctrl+Shift+Minus</code></td>
+              <td>前进到下一个位置</td>
+            </tr>
+            <tr>
+              <td>切换编辑器标签</td>
+              <td><code>Ctrl+Tab</code></td>
+              <td><code>Cmd+Tab</code></td>
+              <td>在打开的编辑器标签间切换</td>
+            </tr>
+            <tr>
+              <td>折叠代码块</td>
+              <td><code>Ctrl+Shift+[</code></td>
+              <td><code>Cmd+Option+[</code></td>
+              <td>折叠当前代码块</td>
+            </tr>
+            <tr>
+              <td>展开代码块</td>
+              <td><code>Ctrl+Shift+]</code></td>
+              <td><code>Cmd+Option+]</code></td>
+              <td>展开当前代码块</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <h2 id="search-shortcuts">搜索快捷键</h2>
+      
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>功能</th>
+              <th>Windows/Linux</th>
+              <th>Mac</th>
+              <th>描述</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>在文件中查找</td>
+              <td><code>Ctrl+F</code></td>
+              <td><code>Cmd+F</code></td>
+              <td>在当前文件中搜索</td>
+            </tr>
+            <tr>
+              <td>在文件中替换</td>
+              <td><code>Ctrl+H</code></td>
+              <td><code>Cmd+H</code></td>
+              <td>在当前文件中搜索并替换</td>
+            </tr>
+            <tr>
+              <td>在所有文件中查找</td>
+              <td><code>Ctrl+Shift+F</code></td>
+              <td><code>Cmd+Shift+F</code></td>
+              <td>在项目的所有文件中搜索</td>
+            </tr>
+            <tr>
+              <td>在所有文件中替换</td>
+              <td><code>Ctrl+Shift+H</code></td>
+              <td><code>Cmd+Shift+H</code></td>
+              <td>在项目的所有文件中搜索并替换</td>
+            </tr>
+            <tr>
+              <td>查找下一个</td>
+              <td><code>F3</code></td>
+              <td><code>Cmd+G</code></td>
+              <td>查找下一个匹配项</td>
+            </tr>
+            <tr>
+              <td>查找上一个</td>
+              <td><code>Shift+F3</code></td>
+              <td><code>Cmd+Shift+G</code></td>
+              <td>查找上一个匹配项</td>
+            </tr>
+            <tr>
+              <td>语义搜索</td>
+              <td><code>Ctrl+T</code></td>
+              <td><code>Cmd+T</code></td>
+              <td>使用自然语言搜索代码</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <h2 id="view-shortcuts">视图快捷键</h2>
+      
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>功能</th>
+              <th>Windows/Linux</th>
+              <th>Mac</th>
+              <th>描述</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>放大</td>
+              <td><code>Ctrl++</code></td>
+              <td><code>Cmd++</code></td>
+              <td>增加编辑器字体大小</td>
+            </tr>
+            <tr>
+              <td>缩小</td>
+              <td><code>Ctrl+-</code></td>
+              <td><code>Cmd+-</code></td>
+              <td>减小编辑器字体大小</td>
+            </tr>
+            <tr>
+              <td>重置缩放</td>
+              <td><code>Ctrl+0</code></td>
+              <td><code>Cmd+0</code></td>
+              <td>重置编辑器字体大小</td>
+            </tr>
+            <tr>
+              <td>全屏</td>
+              <td><code>F11</code></td>
+              <td><code>Cmd+Ctrl+F</code></td>
+              <td>切换全屏模式</td>
+            </tr>
+            <tr>
+              <td>拆分编辑器</td>
+              <td><code>Ctrl+\</code></td>
+              <td><code>Cmd+\</code></td>
+              <td>将编辑器拆分为两个窗格</td>
+            </tr>
+            <tr>
+              <td>切换窗格</td>
+              <td><code>Ctrl+1/2/3</code></td>
+              <td><code>Cmd+1/2/3</code></td>
+              <td>切换到指定的编辑器窗格</td>
+            </tr>
+            <tr>
+              <td>切换Zen模式</td>
+              <td><code>Ctrl+K Z</code></td>
+              <td><code>Cmd+K Z</code></td>
+              <td>切换到无干扰的写作模式</td>
+            </tr>
+            <tr>
+              <td>切换迷你地图</td>
+              <td><code>Ctrl+Shift+M</code></td>
+              <td><code>Cmd+Shift+M</code></td>
+              <td>显示/隐藏代码迷你地图</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <h2 id="debugging-shortcuts">调试快捷键</h2>
+      
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>功能</th>
+              <th>Windows/Linux</th>
+              <th>Mac</th>
+              <th>描述</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>开始/继续调试</td>
+              <td><code>F5</code></td>
+              <td><code>F5</code></td>
+              <td>开始调试或继续执行</td>
+            </tr>
+            <tr>
+              <td>停止调试</td>
+              <td><code>Shift+F5</code></td>
+              <td><code>Shift+F5</code></td>
+              <td>停止调试会话</td>
+            </tr>
+            <tr>
+              <td>重启调试</td>
+              <td><code>Ctrl+Shift+F5</code></td>
+              <td><code>Cmd+Shift+F5</code></td>
+              <td>重新启动调试会话</td>
+            </tr>
+            <tr>
+              <td>单步执行</td>
+              <td><code>F10</code></td>
+              <td><code>F10</code></td>
+              <td>单步执行（不进入函数）</td>
+            </tr>
+            <tr>
+              <td>单步进入</td>
+              <td><code>F11</code></td>
+              <td><code>F11</code></td>
+              <td>单步执行（进入函数）</td>
+            </tr>
+            <tr>
+              <td>单步跳出</td>
+              <td><code>Shift+F11</code></td>
+              <td><code>Shift+F11</code></td>
+              <td>从当前函数跳出</td>
+            </tr>
+            <tr>
+              <td>切换断点</td>
+              <td><code>F9</code></td>
+              <td><code>F9</code></td>
+              <td>在当前行设置/清除断点</td>
+            </tr>
+            <tr>
+              <td>显示调试控制台</td>
+              <td><code>Ctrl+Shift+Y</code></td>
+              <td><code>Cmd+Shift+Y</code></td>
+              <td>显示调试控制台</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <h2 id="git-shortcuts">Git快捷键</h2>
+      
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>功能</th>
+              <th>Windows/Linux</th>
+              <th>Mac</th>
+              <th>描述</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>显示源代码控制</td>
+              <td><code>Ctrl+Shift+G</code></td>
+              <td><code>Cmd+Shift+G</code></td>
+              <td>显示Git面板</td>
+            </tr>
+            <tr>
+              <td>提交更改</td>
+              <td><code>Ctrl+Enter</code></td>
+              <td><code>Cmd+Enter</code></td>
+              <td>在Git面板中提交更改</td>
+            </tr>
+            <tr>
+              <td>刷新变更</td>
+              <td><code>Alt+R</code></td>
+              <td><code>Option+R</code></td>
+              <td>刷新Git状态</td>
+            </tr>
+            <tr>
+              <td>查看变更</td>
+              <td><code>Alt+G Alt+D</code></td>
+              <td><code>Option+G Option+D</code></td>
+              <td>查看当前文件变更</td>
+            </tr>
+            <tr>
+              <td>推送到远程</td>
+              <td><code>Alt+G Alt+P</code></td>
+              <td><code>Option+G Option+P</code></td>
+              <td>将提交推送到远程仓库</td>
+            </tr>
+            <tr>
+              <td>拉取更改</td>
+              <td><code>Alt+G Alt+L</code></td>
+              <td><code>Option+G Option+L</code></td>
+              <td>从远程仓库拉取更改</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <h2 id="customize-shortcuts">自定义快捷键</h2>
+      
+      <div class="card">
+        <p>
+          你可以根据自己的习惯自定义Cursor的键盘快捷方式：
+        </p>
+        <ol>
+          <li>打开"File > Preferences > Keyboard Shortcuts"或使用<code>Ctrl+K Ctrl+S</code>（Windows/Linux）或<code>Cmd+K Cmd+S</code>（Mac）</li>
+          <li>在搜索框中输入想要修改的命令或现有快捷键</li>
+          <li>点击要修改的项目，然后点击铅笔图标</li>
+          <li>按下新的快捷键组合</li>
+          <li>按Enter确认更改</li>
+        </ol>
+        <p>
+          你也可以直接编辑keybindings.json文件进行更高级的自定义：
+        </p>
+        <ol>
+          <li>在键盘快捷方式编辑器中点击右上角的文件图标</li>
+          <li>在打开的JSON文件中添加或修改键绑定配置</li>
+          <li>保存文件以应用更改</li>
+        </ol>
+      </div>
+      
+      <h2 id="next-steps">进一步学习</h2>
+      
+      <div class="card">
+        <p>
+          现在你已经熟悉了Cursor的主要快捷键，下一步你可以：
+        </p>
+        <ul>
+          <li>访问<a href="faq.html">常见问题</a>解决在使用过程中可能遇到的问题</li>
+          <li>开始实际项目开发，实践这些快捷键</li>
+          <li>逐步尝试更多快捷键，提高编程效率</li>
+        </ul>
+        <div class="btn-container">
+          <a href="faq.html" class="btn">查看常见问题</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-section">
+        <h3>文档导航</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="getting-started.html">入门指南</a></li>
+          <li><a href="features.html">功能特性</a></li>
+          <li><a href="shortcuts.html">快捷键</a></li>
+          <li><a href="faq.html">常见问题</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>相关资源</h3>
+        <ul class="footer-links">
+          <li><a href="https://cursor.sh" target="_blank">Cursor官网</a></li>
+          <li><a href="https://github.com/getcursor/cursor" target="_blank">GitHub仓库</a></li>
+          <li><a href="https://cursor.sh/blog" target="_blank">官方博客</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>联系我们</h3>
+        <ul class="footer-links">
+          <li><a href="mailto:info@cursor.sh">邮件联系</a></li>
+          <li><a href="https://twitter.com/cursor_ai" target="_blank">Twitter</a></li>
+          <li><a href="https://discord.gg/cursor" target="_blank">Discord社区</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2023 Cursor文档站点。本站点仅用于教育目的。</p>
+    </div>
+  </footer>
+  
+  <!-- JavaScript文件 -->
+  <script src="../js/main.js"></script>
+</body>
+</html> 
